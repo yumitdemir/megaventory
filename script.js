@@ -1,7 +1,6 @@
 fetch("3291ead6-82a2-43fa-ba6e-58328b4e02a1.json")
   .then((response) => response.json())
   .then((data) => {
-    console.log(data.mvPurchaseOrders);
     DisplayList(data);
   })
   .catch((error) => {
