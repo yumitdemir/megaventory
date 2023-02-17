@@ -18,10 +18,10 @@ const DisplayList = (data) => {
     listItem.className = "list-item";
 
     const link = document.createElement("a");
+    listItem.setAttribute("listIndex", `${i}`);
     link.setAttribute("listIndex", `${i}`);
-
     link.textContent = `${data[i].PurchaseOrderTypeAbbreviation} – ${data[i].PurchaseOrderNo}`;
-    link.addEventListener("click", () => {
+    listItem.addEventListener("click", () => {
       showMoreInfo(data);
     });
 
@@ -55,6 +55,7 @@ const showMoreInfo = (data) => {
   container.appendChild(purchaseOrderStatus);
 
   const table = document.createElement("table");
+  table.id = "purchase-details-table";
   const rows = data.PurchaseOrderDetails.length;
   const cols = 3;
 

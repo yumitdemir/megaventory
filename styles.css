@@ -1,0 +1,42 @@
+body {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+#information-container {
+  place-self: center;
+}
+
+#link-list {
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+.list-item {
+  padding: 15px;
+  color: white;
+  background-color: black;
+}
+.list-item:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+#purchase-details-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1rem;
+  min-width: 400px;
+  border: 1px solid black;
+}
+
+#purchase-details-table td {
+  padding: 12px 15px;
+  border: 1px solid black;
+}
+
+#information-container p {
+  font-size: 1.5rem;
+}
